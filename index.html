@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <style>
+        body {
+            background-color: #111;
+            color: #fff;
+        }
+
+        section {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .hero-section {
+            background: url('your_background_image.jpg') no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        .cta-button {
+            margin-top: 20px;
+        }
+    </style>
+    <title>Bruno Meme Token</title>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Bruno Token</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#tokenomics">Tokenomics</a></li>
+            <li class="nav-item"><a class="nav-link" href="#faucet">Faucet</a></li>
+            <li class="nav-item"><a class="nav-link" href="#roadmap">Roadmap</a></li>
+            <li class="nav-item"><a class="nav-link" href="#community">Community</a></li>
+        </ul>
+    </div>
+</nav>
+
+<section id="home" class="hero-section">
+    <div>
+        <h1>Bruno Meme Token</h1>
+        <p>Your catchy slogan or description here.</p>
+        <button class="btn btn-primary cta-button">Get Tokens</button>
+    </div>
+</section>
+
+<section id="tokenomics">
+    <h2>Tokenomics</h2>
+    <!-- Add your tokenomics content here -->
+</section>
+
+<section id="faucet">
+    <h2>Faucet</h2>
+    <!-- Add your faucet content here -->
+</section>
+
+<section id="roadmap">
+    <h2>Roadmap</h2>
+    <!-- Add your roadmap content here -->
+</section>
+
+<section id="community">
+    <h2>Community</h2>
+    <!-- Add your community content here -->
+</section>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $("a").on('click', function(event) {
+            if (this.hash !== "") {
+                event.preventDefault();
+                var hash = this.hash;
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 800, function(){
+                    window.location.hash = hash;
+                });
+            }
+        });
+    });
+</script>
+
+</body>
+</html>
